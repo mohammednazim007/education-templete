@@ -115,7 +115,9 @@ ul.testmonial_nav li a:hover {
   color: teal;
   transition: 0.5s;
 }
-
+h1.h_color {
+  color: #e056fd;
+}
 /* single box testimonial */
 .single_testimonial_box {
   display: grid;
@@ -148,4 +150,3 @@ ul.testmonial_nav li a:hover {
   gap: 1rem;
   justify-content: space-evenly;
 } */
-
