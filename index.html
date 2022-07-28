@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education-webside</title>
+
+    <!-- flowbite component cdn link  -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
+    <!-- font-awsome icon cdn -->
+    <script src="https://kit.fontawesome.com/de028bc26c.js" crossorigin="anonymous"></script>
+    <!-- tailwindcss link  -->
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body>
+    <header>
+        <nav class="bg-[#EDEEF3] z-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded fixed w-full">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+
+                <!-- ============ -->
+                <div class="flex items-center">
+                    <a href="" class="flex items-center">
+                        <img src="image/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+                    </a>
+
+                </div>
+
+                <!-- ================== -->
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="navlist flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium lg:items-center "
+                        id="nav-list">
+                        <li>
+                            <a href="#slideSection"
+                                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#ourCourse"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Course</a>
+                        </li>
+                        <li>
+                            <a href="#exploreSection"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Details</a>
+                        </li>
+                        <li>
+                            <a href="#successSection"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Success</a>
+                        </li>
+                        <li>
+                            <a href="#footerSection"
+                                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li class="hidden lg:block">
+                            <!-- register button -->
+                            <button
+                                class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+                                <span
+                                    class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                    Register
+                                </span>
+                            </button>
+
+
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <!-- slider section on top  -->
+        <section class="pt-4 md:pt-24 bg-gray-200 md:pb-4" id="slideSection">
+            <div class="container">
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-64 rounded-lg md:h-96 ">
+                        <!-- Item 1 -->
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+
+                            <div class="">
+                                <img src="image/slider3.png"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 bg-red-300"
+                                    alt="...">
+
+                                <div class="absolute top-20 md:top-28 mx-auto w-full  text-center">
+                                    <h1 class="md:text-3xl md:font-semibold sm:text-xl text-white">Get Started
+                                        Digital Learning
+                                    </h1>
+                                    <p
+                                        class="w-full box-border hidden sm:block max-w-[70%] md:max-w-[40%] mx-auto font-serif mt-1 text-gray-300">
+                                        It
+                                        is
+                                        a long
+                                        established
+                                        fact that a
+                                        reader
+                                        will be
+                                        distracted by the readable content of a page when looking at its
+                                        layout.</p>
+                                    <a href="" class="sliderBtn  rounded-sm min-w-[40%] md:min-w-[20%]">Get started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+
+                            <div class="">
+                                <img src="image/slider5.jpg"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 bg-red-300"
+                                    alt="...">
+
+                                <div class="absolute top-20 md:top-28 mx-auto w-full  text-center">
+                                    <h1 class="md:text-3xl sm:text-xl text-white md:font-semibold">Find The Right
+                                        Online Course For You
+                                    </h1>
+                                    <p
+                                        class="w-full box-border hidden sm:block max-w-[70%] md:max-w-[40%] mx-auto font-serif mt-1 text-gray-300">
+                                        It
+                                        is
+                                        a long
+                                        established
+                                        fact that a
+                                        reader
+                                        will be
+                                        distracted by the readable content of a page when looking at its
+                                        layout.</p>
+                                    <a href="" class="sliderBtn  rounded-sm min-w-[40%] md:min-w-[20%]">Get started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+                            data-carousel-item="">
+
+                            <div class="">
+                                <img src="image/slider4.png"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 bg-red-300"
+                                    alt="...">
+
+                                <div class="absolute top-20 md:top-28 mx-auto w-full  text-center">
+                                    <h1 class="md:text-3xl sm:text-xl text-white md:font-semibold">Simple
+                                        All Inclusive Pricing
+                                    </h1>
+                                    <p
+                                        class="w-full box-border hidden sm:block max-w-[70%] md:max-w-[40%] mx-auto font-serif mt-1 text-gray-300">
+                                        It
+                                        is
+                                        a long
+                                        established
+                                        fact that a
+                                        reader
+                                        will be
+                                        distracted by the readable content of a page when looking at its
+                                        layout.</p>
+                                    <a href="" class="sliderBtn  rounded-sm min-w-[40%] md:min-w-[20%]">Get started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="hidden lg:block absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true"
+                            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                            aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button"
+                            class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+                            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-prev="">
+                        <span
+                            class="custom_indicator inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-next="">
+                        <span
+                            class="nextIndicator inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- discover out course  -->
+        <section class="py-20 " id="ourCourse">
+            <div class="container">
+                <!-- course header  -->
+                <div class="w-full md:w-[40%]  mx-auto text-center">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl mb-2">Discover Our Popular Courses</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout.</p>
+                </div>
+
+                <!-- sigle course div  -->
+
+                <div class="single_course_main mt-16">
+                    <!-- single box 1 -->
+                    <div class="single_course box-border p-2 items-center flex flex-col md:flex-row space-x-4 ">
+                        <div class="left_course_img ">
+                            <img class="course_imges w-full" src="image/course-1.png" alt="">
+                        </div>
+                        <div class="right_course_text pl-2">
+                            <h1 class="text-xl md:text-2xl mb-2 w-full mt-2 md:mt-0">Fundamental Of UI/UX Design</h1>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                            <span class="text-teal-500 font-bold">Price : 20$</span>
+                        </div>
+                    </div>
+
+                    <!-- single box 2 -->
+                    <div class="single_course box-border p-2 items-center flex flex-col md:flex-row space-x-4 ">
+                        <div class="left_course_img ">
+                            <img class="course_imges w-full" src="image/course-2.png" alt="">
+                        </div>
+                        <div class="right_course_text pl-2">
+                            <h1 class="text-xl md:text-2xl mb-2 w-full mt-2 md:mt-0">Javascript Basic to advanced</h1>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                            <span class="text-teal-500 font-bold">Price : 25$</span>
+                        </div>
+                    </div>
+
+                    <!-- single box 3 -->
+                    <div class="single_course box-border p-2 items-center flex flex-col md:flex-row space-x-4 ">
+                        <div class="left_course_img ">
+                            <img class="course_imges w-full" src="image/course-3.png" alt="">
+                        </div>
+                        <div class="right_course_text pl-2">
+                            <h1 class="text-xl md:text-2xl mb-2 w-full mt-2 md:mt-0">Fullstack Web Development</h1>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                            <span class="text-teal-500 font-bold">Price : 19$</span>
+                        </div>
+                    </div>
+
+
+                    <!-- single box 4 -->
+                    <div class="single_course box-border mx-auto p-2 items-center flex flex-col md:flex-row space-x-4 ">
+                        <div class="left_course_img ">
+                            <img class="course_imges w-full" src="image/course-4.png" alt="">
+                        </div>
+                        <div class="right_course_text pl-2">
+                            <h1 class="text-2xl mb-2 w-full mt-2 md:mt-0">Digital Marketing</h1>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                            <span class="text-teal-500 font-bold">Price : 27$</span>
+                        </div>
+                    </div>
+
+                    <!-- single box 5 -->
+                    <div class="single_course box-border p-2 items-center flex flex-col md:flex-row space-x-4 ">
+                        <div class="left_course_img ">
+                            <img class="course_imges w-full" src="image/course-5.png" alt="">
+                        </div>
+                        <div class="right_course_text pl-2">
+                            <h1 class="text-xl md:text-2xl mb-2 w-full mt-2 md:mt-0">Photography Basic Rules</h1>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                            <span class="text-teal-500 font-bold">Price : 22$</span>
+                        </div>
+                    </div>
+
+                    <!-- single box 6 -->
+                    <div class="single_course box-border p-2 items-center flex flex-col md:flex-row space-x-4 ">
+                        <div class="left_course_img ">
+                            <img class="course_imges w-full" src="image/course-6.png" alt="">
+                        </div>
+                        <div class="right_course_text pl-2">
+                            <h1 class="text-xl md:text-2xl mb-2 w-full mt-2 md:mt-0">Motion graphics</h1>
+                            <p>Some quick example text to build on the card title and make up the bulk of the card.</p>
+                            <span class="text-teal-500 font-bold">Price : 20$</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- view button  -->
+                <div class="mt-16">
+                    <a href="" class="sliderBtn text-center  rounded-sm min-w-[40%] md:min-w-[20%]">View all</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore The elearning Institute -->
+        <section class="py-16" id="exploreSection">
+            <div class="container">
+                <div class="explore_wraper flex items-center justify-center bg-[#F4FAFD] py-4 md:py-0">
+                    <div class="widthOfImage text-center">
+                        <img class="" src="image/working1.png" alt="">
+                    </div>
+                    <div class="box-border px-2 pl-7 md:pl-7">
+                        <h1 class="text-xl md:text-2xl lg:text-3xl mb-2 font-bold box-border  mt-5 md:mt-0">Explore The
+                            elearning
+                            Institute</h1>
+
+                        <p class="box-border">There are many variations of passages of Lorem Ipsum available, but the
+                            majority have
+                            suffered alteration in some form,
+                            by injected humour, or randomised words which don't look even slightly believable. If you
+                            are going to use a passage of
+                            Lorem Ipsum, you need to be sure.
+
+                            Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                            Internet tend to repeat
+                            predefined.</p>
+
+                        <!-- single counter  -->
+                        <div class="mini_counter_main flex justify-evenly text-center gap-2 mt-6">
+                            <div class="counter_singel">
+                                <h1 class="text-xl md:text-2xl font-bold">3.2K+</h1>
+                                <p>Online Course</p>
+                            </div>
+
+                            <div class="counter_singel">
+                                <h1 class="text-xl md:text-2xl font-bold">3.6K+</h1>
+                                <p>Expert member</p>
+                            </div>
+
+                            <div class="counter_singel">
+                                <h1 class="text-xl md:text-2xl font-bold">3.0K+</h1>
+                                <p>Rating & Review</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="" class="sliderBtn mt-8 text-center rounded-sm min-w-[40%]">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ready to join section  -->
+        <section class="py-20  ">
+            <div class="container">
+                <div class="explore_wraper bg-[#289BDE] text-white p-5 md:p-16 flex flex-col justify-center">
+                    <div class="box-border px-16 ">
+                        <h1 class="text-xl md:text-2xl pb-2">Ready to join?</h1>
+                        <h1 class="text-gray-700 font-serif">It is a long established fact that a reader will
+                            be
+                            distracted by the
+                            readable content of a
+                            page when looking at its
+                            layout.</h1>
+                    </div>
+                    <div>
+                        <div class="flex items-end">
+                            <a href="#" class="sliderBtn text-center rounded-sm min-w-[40%]"
+                                data-modal-toggle="defaultModal" id="modalBtn">Register</a>
+                        </div>
+
+                        <div class="show_hidden hidden">
+                            <!-- Main modal -->
+                            <div id="defaultModal" tabindex="-1"
+                                class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center flex"
+                                aria-modal="false" role="dialog">
+                                <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+                                    <!-- Modal content -->
+                                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                        <!-- Modal header -->
+                                        <div
+                                            class="flex justify-between items-start p-4 rounded-t border-b dark:border-gray-600">
+                                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                                Sign up
+                                            </h3>
+                                            <!-- close modal  -->
+                                            <button type="button"
+                                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                data-modal-toggle="defaultModal">
+                                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                <span class="sr-only">Close modal</span>
+                                            </button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="p-6 space-y-6">
+                                            <form>
+                                                <div class="mb-6">
+                                                    <label for="email"
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                                                        email</label>
+                                                    <input type="email" id="email"
+                                                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                        placeholder="name@flowbite.com" required="">
+                                                </div>
+                                                <div class="mb-6">
+                                                    <label for="password"
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                                                        password</label>
+                                                    <input type="password" id="password"
+                                                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                        required="">
+                                                </div>
+                                                <div class="mb-6">
+                                                    <label for="repeat-password"
+                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Repeat
+                                                        password</label>
+                                                    <input type="password" id="repeat-password"
+                                                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                        required="">
+                                                </div>
+                                                <div class="flex items-start mb-6">
+                                                    <div class="flex items-center h-5">
+                                                        <input id="terms" type="checkbox" value=""
+                                                            class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                                                            required="">
+                                                    </div>
+                                                    <label for="terms"
+                                                        class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I
+                                                        agree with the <a href="#"
+                                                            class="text-blue-600 hover:underline dark:text-blue-500">terms
+                                                            and conditions</a></label>
+                                                </div>
+                                                <button type="submit"
+                                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register
+                                                    new account</button>
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- doule banner with pictur  -->
+        <section class="py-16 " id="productSection">
+            <div class="container">
+                <div class="custom_doule_div gap-x-2 space-y-5 lg:space-y-0 ">
+                    <div class="banner_left_img box-border flex justify-end relative rounded-sm py-7 md:py-0">
+                        <div class="flex flex-col justify-center absolute top-1/4 left-6">
+                            <span
+                                class="block w-16 text-center rounded-full bg-[#FC4389] text-sm text-white">Free</span>
+                            <h1 class="w-[300px] mt-2 font-bold text-2xl ">Germany Foundation
+                                Document</h1>
+                            <div>
+                                <button type="button"
+                                    class="text-white bg-[#2B4EFF] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2 max-w-[200px] mt-6">
+
+                                    View course
+                                </button>
+                            </div>
+                        </div>
+                        <img class="py-5 w-[57%] h-auto object-contain " src="image/banner-img-1.png" alt="">
+                    </div>
+                    <div class="banner_right_img box-border flex justify-end relative rounded-sm ">
+                        <div class="flex flex-col justify-center absolute top-1/4 left-6">
+                            <span
+                                class="block w-16 text-center rounded-full bg-[#FC4389] text-sm text-white">Free</span>
+                            <h1 class="w-[300px] mt-2 font-bold text-2xl ">Online Courses
+                                From Eduka University</h1>
+                            <div>
+                                <button type="button"
+                                    class="text-white bg-[#2B4EFF] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2 max-w-[200px] mt-6">
+
+                                    Find out more
+                                </button>
+                            </div>
+                        </div>
+                        <img class="py-5 w-[57%] h-auto object-contain" src="image/phone-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- find the all testimonial single box  -->
+        <section class=" bg-[#F3F4F8] py-10" id="successSection">
+            <div class="container">
+                <div class="testimoni_wraper">
+                    <div class="testimonial_texs">
+                        <div class="">
+                            <h1 class="text-2xl md:text-4xl font-serif">Meet Our</h1>
+                            <h1 class="text-2xl md:text-4xl font-serif">Successfull Students</h1>
+                        </div>
+
+                    </div>
+                    <!--==== single box infor======= -->
+                    <div class="single_testimonial_box mt-8">
+                        <div class="single_info_box">
+                            <div class="relative">
+                                <div class="images w-[100%] overflow-hidden ">
+                                    <img class="rounded hover:scale-125  duration-1000" src="image/course-1.jpg" alt="">
+                                </div>
+                                <div class="lessons flex justify-between py-3 text-gray-400">
+                                    <div><span><i class="fas fa-book"></i></span>
+                                        <span class="ml-2">43 Lesson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-orange-400"><i class="fas fa-star"></i></span>
+                                        <span>4.5 (44)</span>
+                                    </div>
+
+                                </div>
+                                <div class="profile">
+                                    <h1 class="text-2xl  md:font-sans font-bold">Become a product Manager
+                                        learn the
+                                        skills &
+                                        job.</h1>
+                                    <div class="profile_img flex items-center my-4">
+                                        <img class="rounded-full inline-block mr-4" src="image/teacher-1.jpg" alt="">
+                                        <h1 class="font-semibold">Jim Séchen</h1>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="doller_box flex justify-between items-center my-4">
+                                    <div>
+                                        <span class="text-2xl inline-block text-indigo-600 font-bold">$62.00</span>
+                                        <span class="line-through inline-block font-bold text-gray-600">$97.00</span>
+                                    </div>
+                                    <div class="custom_arrows w-[44%] flex gap-3 items-center ">
+                                        <span class="font-bold text-sm md:text-md">Know Details</span>
+                                        <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text_head bg-[#B128FF] w-[130px] rounded-sm p-1 text-center absolute top-4 left-4 text-white font-semibold text-ms">
+                                    <span class="inline-block">Art & Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_info_box" id="middle_box">
+                            <div class="relative">
+                                <div class="images w-[100%] overflow-hidden ">
+                                    <img class="rounded hover:scale-125  duration-1000" src="image/course-2.jpg" alt="">
+                                </div>
+                                <div class="lessons flex justify-between py-3 text-gray-400">
+                                    <div><span><i class="fas fa-book"></i></span>
+                                        <span class="ml-2">73 Lesson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-orange-400"><i class="fas fa-star"></i></span>
+                                        <span>4.5 (44)</span>
+                                    </div>
+
+                                </div>
+                                <div class="profile">
+                                    <h1 class="text-2xl  md:font-sans font-bold">Fundamentals of music theory Learn new
+                                    </h1>
+                                    <div class="profile_img flex items-center my-4">
+                                        <img class="rounded-full inline-block mr-4" src="image/teacher-2.jpg" alt="">
+                                        <h1 class="font-semibold">Barry Tone</h1>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="doller_box flex justify-between items-center my-4">
+                                    <div>
+                                        <span class="text-2xl inline-block text-[#0FA0DD] font-bold">$82.00</span>
+                                        <span class="line-through inline-block font-bold text-gray-600">$90.00</span>
+                                    </div>
+                                    <div class="custom_arrows w-[44%] flex gap-3 items-center ">
+                                        <span class="font-bold text-sm md:text-md">Know Details</span>
+                                        <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text_head bg-[#0FA0DD] w-[130px] rounded-sm p-1 text-center absolute top-4 left-4 text-white font-semibold text-ms">
+                                    <span class="inline-block">UI/Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_info_box">
+                            <div class="relative">
+                                <div class="images w-[100%] overflow-hidden ">
+                                    <img class="rounded hover:scale-125  duration-1000" src="image/course-3.jpg" alt="">
+                                </div>
+                                <div class="lessons flex justify-between py-3 text-gray-400">
+                                    <div><span><i class="fas fa-book"></i></span>
+                                        <span class="ml-2">25 Lesson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-orange-400"><i class="fas fa-star"></i></span>
+                                        <span>4.5 (44)</span>
+                                    </div>
+
+                                </div>
+                                <div class="profile">
+                                    <h1 class="text-2xl  md:font-sans font-bold">Bases Matemáticas dios Álgebra Ecuacion
+                                    </h1>
+                                    <div class="profile_img flex items-center my-4">
+                                        <img class="rounded-full inline-block mr-4" src="image/teacher-3.jpg" alt="">
+                                        <h1 class="font-semibold">Samuel Serif</h1>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="doller_box flex justify-between items-center my-4">
+                                    <div>
+                                        <span class="text-2xl inline-block text-indigo-600 font-bold">$49.00</span>
+                                        <span class="line-through inline-block font-bold text-[#30A820]">$57.00</span>
+                                    </div>
+                                    <div class="custom_arrows w-[44%] flex gap-3 items-center ">
+                                        <span class="font-bold text-sm md:text-md">Know Details</span>
+                                        <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text_head bg-[#30A820] w-[130px] rounded-sm p-1 text-center absolute top-4 left-4 text-white font-semibold text-ms">
+                                    <span class="inline-block">Development</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_info_box">
+                            <div class="relative">
+                                <div class="images w-[100%] overflow-hidden ">
+                                    <img class="rounded hover:scale-125  duration-1000" src="image/course-4.jpg" alt="">
+                                </div>
+                                <div class="lessons flex justify-between py-3 text-gray-400">
+                                    <div><span><i class="fas fa-book"></i></span>
+                                        <span class="ml-2">62 Lesson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-orange-400"><i class="fas fa-star"></i></span>
+                                        <span>4.5 (44)</span>
+                                    </div>
+
+                                </div>
+                                <div class="profile">
+                                    <h1 class="text-2xl  md:font-sans font-bold">Strategy law and organization
+                                        Foundation</h1>
+                                    <div class="profile_img flex items-center my-4">
+                                        <img class="rounded-full inline-block mr-4" src="image/teacher-4.jpg" alt="">
+                                        <h1 class="font-semibold">Elon Gated</h1>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="doller_box flex justify-between items-center my-4">
+                                    <div>
+                                        <span class="text-2xl inline-block text-[#3B60FF] font-bold">$93.00</span>
+                                        <span class="line-through inline-block font-bold text-gray-600">$97.00</span>
+                                    </div>
+                                    <div class="custom_arrows w-[44%] flex gap-3 items-center ">
+                                        <span class="font-bold text-sm md:text-md">Know Details</span>
+                                        <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text_head bg-[#3B60FF] w-[130px] rounded-sm p-1 text-center absolute top-4 left-4 text-white font-semibold text-ms">
+                                    <span class="inline-block">Development</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_info_box" id="five_box_testimonial">
+                            <div class="relative">
+                                <div class="images w-[100%] overflow-hidden ">
+                                    <img class="rounded hover:scale-125  duration-1000" src="image/course-5.jpg" alt="">
+                                </div>
+                                <div class="lessons flex justify-between py-3 text-gray-400">
+                                    <div><span><i class="fas fa-book"></i></span>
+                                        <span class="ml-2">83 Lesson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-orange-400"><i class="fas fa-star"></i></span>
+                                        <span>4.5 (44)</span>
+                                    </div>
+
+                                </div>
+                                <div class="profile">
+                                    <h1 class="text-2xl  md:font-sans font-bold">The business Intelligence analyst
+                                        Course 2022</h1>
+                                    <div class="profile_img flex items-center my-4">
+                                        <img class="rounded-full inline-block mr-4" src="image/teacher-5.jpg" alt="">
+                                        <h1 class="font-semibold">Eleanor Fant</h1>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="doller_box flex justify-between items-center my-4">
+                                    <div>
+                                        <span class="text-2xl inline-block text-[#FA7919] font-bold">$62.00</span>
+                                        <span class="line-through inline-block font-bold text-gray-600">$97.00</span>
+                                    </div>
+                                    <div class="custom_arrows w-[44%] flex gap-3 items-center ">
+                                        <span class="font-bold text-sm md:text-md">Know Details</span>
+                                        <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text_head bg-[#FA7919] w-[130px] rounded-sm p-1 text-center absolute top-4 left-4 text-white font-semibold text-ms">
+                                    <span class="inline-block">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_info_box">
+                            <div class="relative">
+                                <div class="images w-[100%] overflow-hidden ">
+                                    <img class="rounded hover:scale-125  duration-1000" src="image/course-6.jpg" alt="">
+                                </div>
+                                <div class="lessons flex justify-between py-3 text-gray-400">
+                                    <div><span><i class="fas fa-book"></i></span>
+                                        <span class="ml-2">75 Lesson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-orange-400"><i class="fas fa-star"></i></span>
+                                        <span>4.5 (44)</span>
+                                    </div>
+
+                                </div>
+                                <div class="profile">
+                                    <h1 class="text-2xl  md:font-sans font-bold">Bases Matemáticas dios Álgebra Ecuacion
+                                    </h1>
+                                    <div class="profile_img flex items-center my-4">
+                                        <img class="rounded-full inline-block mr-4" src="image/teacher-6.jpg" alt="">
+                                        <h1 class="font-semibold">Brian Cumin</h1>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="doller_box flex justify-between items-center my-4">
+                                    <div>
+                                        <span class="text-2xl inline-block text-indigo-600 font-bold">$60.00</span>
+                                        <span class="line-through inline-block font-bold text-gray-600">$97.00</span>
+                                    </div>
+                                    <div class="custom_arrows w-[44%] flex gap-3 items-center ">
+                                        <span class="font-bold text-sm md:text-md">Know Details</span>
+                                        <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text_head bg-[#B128FF] w-[130px] rounded-sm p-1 text-center absolute top-4 left-4 text-white font-semibold text-ms">
+                                    <span class="inline-block">Data Science</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="items-end hidden lg:block">
+                        <a href="" class="sliderBtn text-center rounded-sm min-w-[20%]">View all</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- studen feedback section  -->
+        <section class="py-16 ">
+            <div class="container">
+                <div class="w-full md:w-[40%]  mx-auto text-center">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl mb-2 font-bold">Some Students Feedback</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout.</p>
+                </div>
+                <div class="mt-16">
+                    <ol class="relative border-l border-gray-200 dark:border-gray-700">
+                        <li class="mb-10 ml-4 relative">
+                            <!-- rating  -->
+                            <div class="flex items-center absolute top-2 right-2">
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>First star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Second star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Third star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fourth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-300 dark:text-gray-500"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fifth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                            </div>
+                            <time
+                                class="mb-1 pl-4 m-2 inline-block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February
+                                2022</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in
+                                Tailwind
+                                CSS</h3>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">There are many
+                                variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form,
+                                by injected humour, or randomised words which don't look even slightly believable. If
+                                you are going to use a passage of
+                                Lorem.</p>
+                            <div class="shadow px-5 py-3 flex items-center space-x-6">
+                                <img class="scale-150 rounded-full" src="image/teacher-1.jpg" alt="">
+                                <div>
+                                    <h1 class="font-bold">Awlad Hossain</h1>
+                                    <span>Designer</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mb-10 ml-4 relative">
+                            <!-- rating  -->
+                            <div class="flex items-center absolute top-2 right-2">
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>First star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Second star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Third star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fourth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-300 dark:text-gray-500"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fifth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                            </div>
+                            <time
+                                class="mb-1 pl-4 m-2 inline-block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March
+                                2022</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in
+                                Tailwind
+                                CSS</h3>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">There are many
+                                variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form,
+                                by injected humour, or randomised words which don't look even slightly believable. If
+                                you are going to use a passage of
+                                Lorem.</p>
+                            <div class="shadow px-5 py-3 flex items-center space-x-6">
+                                <img class="scale-150 rounded-full" src="image/teacher-2.jpg" alt="">
+                                <div>
+                                    <h1 class="font-bold">Shanta Akter</h1>
+                                    <span>Designer</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="mb-10 ml-4 relative">
+                            <!-- rating  -->
+                            <div class="flex items-center absolute top-2 right-2">
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>First star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Second star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Third star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fourth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-300 dark:text-gray-500"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Fifth star</title>
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                            </div>
+                            <time
+                                class="mb-1 pl-4 m-2 inline-block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                                April
+                                2022</time>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in
+                                Tailwind
+                                CSS</h3>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">There are many
+                                variations of passages of Lorem Ipsum available, but the majority have suffered
+                                alteration in some form,
+                                by injected humour, or randomised words which don't look even slightly believable. If
+                                you are going to use a passage of
+                                Lorem.</p>
+                            <div class="shadow px-5 py-3 flex items-center space-x-6">
+                                <img class="scale-150 rounded-full" src="image/teacher-1.jpg" alt="">
+                                <div>
+                                    <h1 class="font-bold">Awlad Hossain</h1>
+                                    <span>Designer</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- according section with question  -->
+        <section class="py-16" id="bg_image" id="questionSection">
+            <div class="container">
+                <div class="w-full md:w-[40%]  mx-auto text-center mb-7">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl mb-2 font-bold">Frequently Asked Questions</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout.</p>
+                </div>
+                <div id="accordion-color" data-accordion="collapse"
+                    data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+                    <h2 id="accordion-color-heading-1">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 hover:bg-blue-100 dark:hover:bg-gray-800 bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+                            data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                            aria-controls="accordion-color-body-1">
+                            <div>
+                                <span>Jun 14, 202212:00 am - 2:30 pmNew York</span>
+                                <h1 class="md:text-xl font-bold">What is the difference between flexbox and grid</h1>
+                            </div>
+                            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-color-body-1" class="" aria-labelledby="accordion-color-heading-1">
+                        <div
+                            class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Grid and flexbox. The basic difference
+                                between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for
+                                layout in one dimension - either a row or a column. Grid was designed for
+                                two-dimensional layout - rows, and columns at
+                                the same time.</p>
+
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-color-heading-2">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                            aria-controls="accordion-color-body-2">
+                            <div>
+                                <span>April 10, 20229:00 am - 5:00 pmMindahan</span>
+                                <h1 class="md:text-xl font-bold">What is the difference between bootstrap and tailwind
+                                </h1>
+                            </div>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                        <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference between TailwindCSS and
+                                Bootstrap is that Tailwind CSS is not a UI kit . Unlike UI kits such as
+                                Bootstrap, Bulma, and Foundation, Tailwind CSS doesn't have a default theme or built-in
+                                UI components. Instead, it comes
+                                with predesigned widgets you can use to build your site from scratch.</p>
+
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-color-heading-3">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                            aria-controls="accordion-color-body-3">
+                            <div>
+                                <span>July 16, 202210:30 am - 1:30 pmWeedpatch</span>
+                                <h1 class="md:text-xl font-bold">What is the css box model</h1>
+                            </div>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                        <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core
+                                components from
+                                Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.
+                                Another
+                                difference is that Flowbite relies on smaller and standalone components, whereas
+                                Tailwind UI offers
+                                sections of pages.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The CSS box model is a container that
+                                contains multiple properties including borders, margin, padding, and the content
+                                itself.</p>
+
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                <li><a href="https://flowbite.com/pro/"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                                <li><a href="https://tailwindui.com/" rel="nofollow"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2 id="accordion-color-heading-4">
+                        <button type="button"
+                            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                            data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                            aria-controls="accordion-color-body-4">
+                            <div>
+                                <span>July 16, 202210:30 am - 1:30 pmWeedpatch</span>
+                                <h1 class="md:text-xl font-bold">What is an HTML Semantic Tag ?</h1>
+                            </div>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-4">
+                        <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The HTML semantics refers to the tags that
+                                provide meaning to an HTML page rather than just presentation . It makes HTML
+                                more comprehensible by better defining the different sections and layout of web pages.
+                            </p>
+
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                <li><a href="https://flowbite.com/pro/"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite
+                                        Pro</a></li>
+                                <li><a href="https://tailwindui.com/" rel="nofollow"
+                                        class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--===== Trusted by over 800+ companies ===== -->
+        <section class="py-20 lg:block">
+            <div class="container">
+                <div class="image_wraper flex items-center justify-center space-x-3">
+                    <a href=""><img src="image/banner-img-11.png" alt=""></a>
+                    <a href=""><img src="image/company-1.png" alt=""></a>
+                    <a href=""><img src="image/company-2.png" alt=""></a>
+                    <a href=""><img src="image/company-3.png" alt=""></a>
+                    <a href=""><img src="image/company-4.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!--========== footer section ========== -->
+        <footer class="pt-44 bg-[#0E1133] pl-5 md:pl-0" id="footerSection">
+            <div class="container">
+                <div class="">
+                    <div class="md:flex md:justify-between">
+                        <div class="mb-6 md:mb-0">
+                            <a href="https://flowbite.com/" class="flex items-center">
+                                <img src="image/logo-2.png" class="mr-3 h-8" alt="FlowBite Logo">
+                            </a>
+                            <p class="max-w-[50%] text-white mt-4">Great lesson ideas and lesson plans for ESL teachers!
+                                Educators can
+                                customize lesson plans to
+                                best.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                            <div>
+                                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company
+                                </h2>
+                                <ul class="text-gray-600 dark:text-gray-400">
+                                    <li><a href="">About
+                                        </a>Courses</li>
+                                    <li><a href="">Events</a></li>
+                                    <li><a href="">Instructor</a></li>
+                                    <li><a href="">Career</a></li>
+                                    <li><a href="">Become a Teacher</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Platform
+                                </h2>
+                                <ul class="text-gray-600 dark:text-gray-400">
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite"
+                                            class="hover:underline ">Github</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hidden lg:block">
+                                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Subscribe
+                                </h2>
+                                <ul class="text-gray-600 dark:text-gray-400">
+                                    <li class="mb-4 flex ">
+                                        <input type="text" class="" placeholder="email">
+                                        <button type="button"
+                                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="sr-only">Icon description</span>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a
+                                href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                        </span>
+                        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="sr-only">Facebook page</span>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="sr-only">Instagram page</span>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                    </path>
+                                </svg>
+                                <span class="sr-only">Twitter page</span>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="sr-only">GitHub account</span>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="sr-only">Dribbbel account</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <!-- tailwindcss plugins -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <!-- custom js  -->
+    <script src="custom_javascript/index.js"></script>
+</body>
+
+</html>
